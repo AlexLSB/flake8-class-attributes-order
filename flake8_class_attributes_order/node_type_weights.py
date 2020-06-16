@@ -7,8 +7,7 @@ from typing_extensions import Final
 NON_STRICT_NODE_TYPE_WEIGHTS: Final[Mapping[str, int]] = {
     'docstring': 0,
     'pass': 1,
-    'meta_class': 2,
-    'nested_class': 3,
+
 
     'constant': 4,
     'field': 5,
@@ -16,14 +15,17 @@ NON_STRICT_NODE_TYPE_WEIGHTS: Final[Mapping[str, int]] = {
 
     'if': 7,
     'expression': 8,
+    
+    'meta_class': 9,
+    'nested_class': 10,
 
-    '__new__': 9,
-    '__init__': 10,
-    '__post_init__': 11,
-    '__str__': 12,
+    '__new__': 11,
+    '__init__': 12,
+    '__post_init__': 13,
+    '__str__': 14,
 
-    'save': 13,
-    'delete': 14,
+    'save': 15,
+    'delete': 16,
 
     'property_method': 20,
     'private_property_method': 20,
